@@ -82,10 +82,9 @@ def addParticles(sim, pRange=None, scale=None, subdivisions=2):
         name = "REBOUND Particle %d (%s)"%(i,uniqueSimulationID)        
         ops.mesh.primitive_ico_sphere_add(subdivisions=subdivisions,scale=(s,s,s),location=(p.x,p.y,p.z))
         sphere = context.active_object
-        context.scene.collection.objects.unlink(sphere)
         sphere.name = name
-
-        emptyp.objects.link(sphere)#.parent = emptyp
+        ops.collection.objects_remove_all()
+        emptyp.objects.link(sphere)
     
 def insertOrbitsKeyframe(sim, pRange=None):
     # Creates or appends a pc2 file to store time dependent
@@ -168,6 +167,7 @@ for i in range(100):
 
     sim.integrate(sim.t+0.03)
 
-# Reset keyframe to 0
+# Set end frame and return to keyframe 0
+context.scene.frame_end = data.scenes['Scene'].frame_current
 context.scene.frame_set(0)
 
