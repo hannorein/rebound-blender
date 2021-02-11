@@ -15,6 +15,6 @@ cd /Applications/Blender.app/Contents/Resources/2.90/python/bin
 
 ## Youtube Video
 
-[![YOUTUBE Tutorial](http://img.youtube.com/vi/jx76rtaJB7A/0.jpg)](http://www.youtube.com/watch?v=jx76rtaJB7A/0.jpg "Youtube Tutorial")
+[![YOUTUBE Tutorial](http://img.youtube.com/vi/jx76rtaJB7A/0.jpg)](http://www.youtube.com/watch?v=jx76rtaJB7A "Youtube Tutorial")
 
 
