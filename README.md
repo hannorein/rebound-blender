@@ -1,5 +1,5 @@
 # rebound-blender
-Scripts to import (REBOUND)[https://github.com/hannorein/rebound] N-body simulation data into BLENDER
+Scripts to import [REBOUND](https://github.com/hannorein/rebound) N-body simulation data into BLENDER
 
 
 ## REBOUND Installation
